@@ -1,0 +1,19 @@
+{
+  "name": "budget-app",
+  "version": "1.0.0",
+  "description": "Budget App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Sami",
+  "license": "ISC",
+  "dependencies": {
+    "@types/uniqid": "^5.2.0",
+    "parcel-bundler": "^1.12.4",
+    "uniqid": "^5.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}

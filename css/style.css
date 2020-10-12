@@ -1,0 +1,359 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #f5f1eb;
+}
+
+.clear-fix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  height: 90vh;
+  max-width: 120rem;
+  margin: 6vh auto;
+}
+@media only screen and (max-width: 62.5em) {
+  .container {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+.top {
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #212529;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.budget__monthly-value {
+  display: block;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.budget__total {
+  padding: 2rem;
+  border-radius: 3px;
+  color: #f0efeb;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .budget__total {
+    width: 100%;
+  }
+}
+
+.budget__total-expense {
+  background-color: #ff4b5c;
+  margin: 2rem auto;
+}
+
+.budget__total-income {
+  background-color: #00bfa5;
+}
+
+.budget__total-title {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.budget__total-value {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.budget__total-percentage {
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: block;
+  float: right;
+  margin-top: 0.6rem;
+}
+
+.add {
+  padding: 3rem 2.5rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.03);
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .add {
+    margin-top: 0;
+  }
+}
+
+.input {
+  border-radius: 3px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .input {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.input__select {
+  width: 50px;
+  color: #495057;
+  font-size: 2rem;
+  font-weight: 300;
+  border: 1px solid #dee2e6;
+  cursor: pointer;
+  margin-right: 2rem;
+  border-radius: 2px;
+}
+
+.input__select:active,
+.input__select:focus {
+  outline: none;
+}
+
+.input__description {
+  font-family: inherit;
+  border: 1px solid #dee2e6;
+  font-size: 1.5rem;
+  padding: 1rem 1.3rem;
+  margin-right: 2rem;
+  flex: 1;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .input__description {
+    margin: 1rem 0;
+    width: 80%;
+  }
+}
+
+.input__description:focus {
+  outline: none;
+}
+
+.input__description::placeholder {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #212529;
+}
+
+.input__value {
+  font-family: inherit;
+  border: 1px solid #dee2e6;
+  padding: 0.5rem 1rem;
+  width: 20%;
+  border-radius: 2px;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .input__value {
+    margin-bottom: 1rem;
+    margin-right: 0;
+    width: 50%;
+  }
+}
+
+.input__value::placeholder {
+  font-weight: 300;
+  color: #212529;
+}
+
+.input__value:focus {
+  outline: none;
+}
+
+.add__btn {
+  border: none;
+  padding: 0.5rem 2.5rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 300;
+  background-color: #00bfa5;
+  color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+
+.add__btn:focus {
+  outline: none;
+}
+.add__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.05);
+}
+.add__btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.03);
+}
+
+.add__btn-icon {
+  font-size: 1.8rem;
+  margin-left: 0.8rem;
+}
+
+.budget-description {
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .budget-description {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.budget-description__title {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.income {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .income {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.expense {
+  width: 50%;
+}
+@media only screen and (max-width: 37.5em) {
+  .expense {
+    width: 100%;
+  }
+}
+
+.income__title {
+  color: #00bfa5;
+}
+
+.expense__title {
+  color: #ff4b5c;
+}
+
+.budget-description__list {
+  margin: 2rem 0;
+  font-weight: 300;
+  color: #212529;
+  border-radius: 2px;
+  padding: 1rem 1.5rem;
+  background-color: #f5f1eb;
+}
+
+.budget-description__type {
+  font-size: 1.7rem;
+  float: left;
+}
+
+.budget-description__value {
+  font-size: 1.7rem;
+  float: right;
+}
+
+.budget__description-percentage {
+  float: right;
+  font-size: 1.5rem;
+  margin-right: 1.8rem;
+  margin-top: 0.1rem;
+  color: #ff4b5c;
+}
+
+.btn-delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  float: right;
+  margin-left: 2rem;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  transform: translateY(-2px);
+}
+.btn-delete:active {
+  transform: translateY(0px);
+}
+.btn-delete:focus {
+  outline: none;
+}
+.btn-delete__icon {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+.btn-delete__icon--inc {
+  color: #00bfa5;
+}
+.btn-delete__icon--exp {
+  color: #ff4b5c;
+}
+
+/* SELECTED CLASSES */
+.select__inc,
+.select__exp {
+  transition: all 0.3s;
+}
+.select__inc:focus {
+  border: 1px solid #00bfa5;
+}
+.select__exp:focus {
+  border: 1px solid #ff4b5c;
+}

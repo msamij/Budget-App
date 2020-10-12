@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h2 class="title">
+          Available Budget for
+          <span class="budget__month">November</span>
+          <span class="budget__year">2020</span>
+          <span class="budget__monthly-value">---</span>
+        </h2>
+
+        <div class="budget__total budget__total-income">
+          <h2 class="budget__total-title">Total Income</h2>
+          <p class="budget__total-value budget__total-value--income">---</p>
+        </div>
+
+        <div class="budget__total budget__total-expense">
+          <h2 class="budget__total-title">Total Expense</h2>
+          <p class="budget__total-value budget__total-value--expense">---</p>
+          <p class="budget__total-percentage">---</p>
+        </div>
+      </div>
+
+      <div class="add">
+        <div class="input">
+          <select class="input__select select__inc">
+            <option class="inc" selected>+</option>
+            <option class="exp">-</option>
+          </select>
+
+          <input
+            type="text"
+            class="input__description select__inc"
+            placeholder="Add Description"
+          />
+
+          <input
+            type="number"
+            class="input__value select__inc"
+            placeholder="Add Value"
+          />
+
+          <button class="add__btn">
+            Add<ion-icon
+              name="checkmark-circle-outline"
+              class="add__btn-icon"
+            ></ion-icon>
+          </button>
+        </div>
+
+        <div class="budget-description">
+          <div class="income">
+            <h2 class="budget-description__title income__title">Incomes</h2>
+            <!-- <div class="budget-description__list clear-fix">
+              <p class="budget-description__type">Project</p>
+              <button class="btn-delete">
+                <ion-icon
+                  name="close-circle-outline"
+                  class="btn-delete__icon btn-delete__icon--inc"
+                ></ion-icon>
+              </button>
+              <p class="budget-description__value">$300</p>
+            </div> -->
+          </div>
+
+          <div class="expense">
+            <h2 class="budget-description__title expense__title">Expenses</h2>
+            <!-- <div class="budget-description__list clear-fix">
+              <p class="budget-description__type">Project</p>
+              <button class="btn-delete btn-delete--exp">
+                <ion-icon
+                  name="close-circle-outline"
+                  class="btn-delete__icon btn-delete__icon--exp"
+                ></ion-icon>
+              </button>
+              <p class="budget-description__value">$300</p>
+              <p class="budget__description-percentage">16%</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.ts"></script>
+  </body>
+</html>
